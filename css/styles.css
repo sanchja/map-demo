@@ -1,7 +1,12 @@
 @charset "UTF-8";
 MA/* CSS Document */
 
-
+body{position:relative;
+}
+.usa_map{
+	width:100%; height:auto;
+	margin:0px auto;
+	}
 .states {
-    background-image: none;
+    
 }
