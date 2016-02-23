@@ -3,10 +3,24 @@ MA/* CSS Document */
 
 body{position:relative;
 }
-.usa_map{
-	width:100%; height:auto;
-	margin:0px auto;
+div.usa_map{
+    background-image: url(../image/map_usa.png);
+    background-repeat: no-repeat;
+    margin:0px auto;
+    width: 1200px;
+    height: 694px;
+    float:left;
+    position:relative;
 	}
 .states {
     
+}
+
+.region1 {
+    z-index:1;
+    position:absolute;
+    top:100px; left:1025px;
+}
+.region1:hover {
+    opacity:.5;
 }
