@@ -24,3 +24,12 @@ div.usa_map{
 .region1:hover {
     opacity:.5;
 }
+
+.gregory_byrnes {
+    width: 207px; height:359px;
+    position:absolute;
+    float:left;
+    top:200px; left:1200px;
+    border: 3px solid #dd35b8;
+    visibility: hidden;
+}
