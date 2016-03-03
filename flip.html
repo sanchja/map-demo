@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+        <script src="js/jquery-2.2.1.min.js"></script>
+        <script src="js/jquery.flip.min.js"></script>
+        <script src="js/jquery.flip.min.js.map"></script>
+</head>
+<body>
+    <div id="card"> 
+        <div class="front"><img style="backface-visibility: hidden;" src="image/Byrnes.Greg.Northeast.6668.jpg"/></div> 
+        <div class="back">
+            <img src="/image/Gill.Jim.Northeast.194.jpg"/>
+        </div> 
+    </div>
+
+<script src="jquery.js"></script>
+<script src="jquery.flip.js"></script>
+<script>
+$(function($) {
+  $("#card").flip({
+    trigger: 'click',
+    speed: '1000',
+    toggle: 'true',
+  }); 
+});
+</script>
+
+
+</body>
+</html>
