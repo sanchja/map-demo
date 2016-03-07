@@ -53,13 +53,15 @@ $(function() {
             zoom.to({ element: event.target });
         } );
         
-        $('.gregory_byrnes').on('click',function(){
-            $(this).addClass('animated tada');
-        })
+//        $('.gregory_byrnes').on('click',function(){
+//            $(this).addClass('animated slideInRight');
+//        })
+//        
+//        $('.James_A_Gill').on('click',function(){
+//            $(this).addClass('animated slideInRight');
+//        })
         
-        $('.James_A_Gill').on('click',function(){
-            $(this).addClass('animated tada');
-        })
+       
 	
 });
     

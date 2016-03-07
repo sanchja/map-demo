@@ -1510,7 +1510,7 @@
   }
 
   to {
-    opacity: 0;
+    opacity: .5;
   }
 }
 
@@ -1520,7 +1520,7 @@
   }
 
   to {
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 
