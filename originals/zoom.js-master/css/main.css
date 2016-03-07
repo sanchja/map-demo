@@ -63,3 +63,20 @@ em {
 
 	font-weight: bold;
 }
+
+.kim_fear {
+    width: 134px; height:auto;
+    float:left;
+    top:50px; left:820px;
+    border: 3px solid #dd35b8;
+    display: block;
+    background-color: white;
+    z-index: 999;
+}
+
+.dbm_button {
+    width:200px; height: 200px;
+    border-radius: .25;
+    background-color:blue; display:block; position:absolute;
+    bottom: 50px; left:50px; float:left;clear: both;
+}
