@@ -3,7 +3,7 @@ MA/* CSS Document */
 
 body{position:relative;
 }
-div.usa_map{
+.usa_map{
     background-image: url(../image/map_usa.png);
     background-repeat: no-repeat;
     margin:0px auto;
@@ -19,7 +19,7 @@ div.usa_map{
 .region1 {
     z-index:1;
     position:absolute;
-    left:63px; top:70px;
+    right:57px; top:183px;
     opacity:.7;
 }
 
@@ -30,7 +30,7 @@ div.usa_map{
     float:left;
     top:530px; left:2220px;
     border: 3px solid #dd35b8;
-/*    display: none;*/
+    display: none;
     background-color: white;
 }
 .fader{visibility: visible;}
@@ -41,7 +41,7 @@ div.usa_map{
     float:left;
     top:740px; left:2220px;
     border: 3px solid #dd35b8;
-/*    display:none;*/
+    display:none;
     background-color: white;
 }
 

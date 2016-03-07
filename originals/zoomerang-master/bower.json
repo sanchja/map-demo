@@ -1,0 +1,12 @@
+{
+  "name": "zoomerang",
+  "description": "drop-in zoomer for anything",
+  "main": "zoomerang.js",
+  "ignore": [
+    ".*",
+    "*.md",
+    "*.json",
+    "index.html",
+    "test.jpg"
+  ]
+}
