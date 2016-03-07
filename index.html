@@ -3,22 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/jquery.flip.min.js"></script>
     <script src="js/jquery.flip.min.js.map"></script>
     <script src="js/zoomerang.js"></script>
+    
 </head>
 
 <body bgcolor="#d6f1fd">	
-    
+<div class="page-body"> 
     <div class="usa_map">
+        <div style="position:absolute; left:300px; top: 300px; font-size:5em;">here's some sample text</div>
     <div class="region1"><img src="image/n_east.png"/></div>   
         <div class="gregory_byrnes"><img src="/image/Byrnes.Greg.Northeast.6668.jpg"/>17101<br> Boston, MA</div>   
         <div class="James_A_Gill"><img src="/image/Gill.Jim.Northeast.194.jpg"/>17102<br> Hartford, CT</div>
     </div>
+<!--
     <script src="jquery.flip.js"></script>
     <script src="js/main.js"></script>
+-->
+    <script src="js/zoom.js"></script>
+    <script>
+			document.querySelector( '.page-body' ).addEventListener( 'click', function( event ) {
+				event.preventDefault();
+				zoom.to({ element: event.target });
+			} );
+		</script>
+</div>
 </body>
 </html>
