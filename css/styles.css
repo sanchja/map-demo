@@ -3,6 +3,7 @@ MA/* CSS Document */
 
 body{position:relative;
 }
+h6{ font-size: 1.2em; font-weight: 800; color: black;}
 .usa_map{
     background-image: url(../image/map_usa.png);
     background-repeat: no-repeat;
@@ -19,14 +20,13 @@ body{position:relative;
 .region1 {
     z-index:1;
     position:absolute;
- /*   right:57px; top:183px;*/
-        left:1800px; top:183px;
-
-    opacity:.7;
+    left:1800px; top:183px;
+    opacity:.5;
 }
 .region1:hover{
     cursor:pointer;
-    /*opacity:.5;*/    
+    opacity:.7;
+    display:block;
 }
 
 
@@ -40,7 +40,6 @@ body{position:relative;
     background-color: white;
     z-index: 999;
 }
-.flipped{background-color: orange;}
 
 .James_A_Gill {
     width:125px; height:auto;
@@ -66,19 +65,61 @@ body{position:relative;
 }
 
 .front {
-    
+
 }
 
 #card {
     width:125px; height:150px;
     position:absolute;
-    top:740px; left:2220px;
+    top:900px; left:2220px;
     border: 3px solid #dd35b8;
 /*    display:none;*/
     background-color: white;
 }
 
 .zoom_samples {
-    position:absolute; left:300px; top: 300px; font-size:5em; background color:red;
-    height:50px;float:left;
+    position:absolute; left:300px; top: 300px; font-size:2em; background height:auto; width:200px; float:left; color:darkblue;
+}
+
+.region_titles {
+    position:absolute;
+    font-size:2em; 
+    font weight:800; 
+    text-align:center;
+    float:left;
+    top:480px; right:900px;
+    z-index:2; color:darkblue;
+}
+
+.zoom_samples:hover {
+    cursor: pointer;
+}
+
+.south_region {
+    position:absolute; left:900px; top: 900px; font-size:2em; background height:auto; width:200px; float:left; color:darkblue;
+}
+
+.south_regional:hover {
+    cursor: pointer;
+}
+
+.west_region {
+    position:absolute;
+    top:91px; left:38px; float:left;
+    width:422px; height:auto;
+    opacity:.5;
+}
+
+.west_region:hover {
+    cursor:pointer;
+    opacity:.7;
+    display:block;
+}
+
+.south_regional:hover {
+    cursor: pointer;
+}
+
+.south_region:hover {
+    cursor: pointer;
 }

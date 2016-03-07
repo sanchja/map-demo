@@ -37,11 +37,19 @@ $(function() {
 //        }, 500);
 //    });
     
+    document.querySelector( '.west_region' ).addEventListener( 'click', function( event ) {
+            event.preventDefault();
+            $('.usa_map').toggleClass('animated fadeOut');
+            zoom.to({ element: event.target });
+        } );
+    
+    
     document.querySelector( '.region1' ).addEventListener( 'click', function( event ) {
             event.preventDefault();
             $('.usa_map').toggleClass('animated fadeOut');
-                $(".gregory_byrnes").fadeToggle();
-                $(".James_A_Gill").fadeToggle();
+                $("#f1_container").fadeToggle();
+                $("#f2_container").fadeToggle();
+                $("#f3_container").fadeToggle();
             zoom.to({ element: event.target });
         } );
         
@@ -50,6 +58,12 @@ $(function() {
             $('.usa_map').toggleClass('animated fadeOut');
            // $(".gregory_byrnes").fadeToggle();
    // $(".James_A_Gill").fadeToggle();
+            zoom.to({ element: event.target });
+        } );
+    
+    document.querySelector( '.south_region' ).addEventListener( 'click', function( event ) {
+            event.preventDefault();
+            $('.usa_map').toggleClass('animated fadeOut');
             zoom.to({ element: event.target });
         } );
         
@@ -61,7 +75,12 @@ $(function() {
 //            $(this).addClass('animated slideInRight');
 //        })
         
-       
+        //$('#f1_container').on('click', function(){
+         //   $('#f1_container').css('transform' : 'rotateY(180deg');
+          //$('this').css('box-shadow:' ,'-5px 5px 5px #aaa');
+        //});
+        
+        
 	
 });
     
