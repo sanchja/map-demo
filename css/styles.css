@@ -274,3 +274,14 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 }
 
 
+
+#path {
+    stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: dash 5s linear forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
