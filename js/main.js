@@ -10,19 +10,19 @@ $(function() {
                         }
     
     
-        $('#richard_scatoni').on('mousedown',function(){
+        $('#richard_scatoni').on('click',function(){
             $('#f0_card').toggleClass('flip');
         })
         
-        $('#kim_fearNE').on('mousedown',function(){
+        $('#kim_fearNE').on('click',function(){
             $('#f1_card').toggleClass('flip');
         })
         
-        $('#greg_byrnesNE').on('mousedown',function(){
+        $('#greg_byrnesNE').on('click',function(){
             $('#f2_card').toggleClass('flip');
         })
         
-        $('#james_gillNE').on('mousedown',function(){
+        $('#james_gillNE').on('click',function(){
             $('#f3_card').toggleClass('flip');
         })
 
@@ -94,6 +94,10 @@ $(function() {
             event.preventDefault();            
             zoom.out();
         }); 
+    
+    $( "#richard_scatoni" ).draggable();
+    
+    //$( "#kim_fearNE" ).draggable();
     
 });
     
