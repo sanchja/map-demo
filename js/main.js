@@ -3,39 +3,59 @@ $(function() {
 
         
     var northeast = function(){ 
-                        $("#richard_scatoni").fadeToggle();
+                            $("#richard_scatoni").fadeToggle();
                         $("#kim_fearNE").fadeToggle();
                         $("#greg_byrnesNE").fadeToggle();
                         $("#james_gillNE").fadeToggle();
+                        $('#gary_hinds').fadeToggle();
+                        $('#george_evancho').fadeToggle();
                         }
     
+//    var checkcards = function(){
+//        if ($(".flip").length>0{
+//                  alert('this happened');  // Do something if class exists
+//                } else {
+//                    alert('it didn\'t happen');
+//                }
+//    }
     
-        $('#richard_scatoni').on('click',function(){
+        $('#richard_scatoni').on('mousedown',function(){
             $('#f0_card').toggleClass('flip');
+                
         })
         
-        $('#kim_fearNE').on('click',function(){
+        $('#kim_fearNE').on('mousedown',function(){
             $('#f1_card').toggleClass('flip');
         })
         
-        $('#greg_byrnesNE').on('click',function(){
+        $('#greg_byrnesNE').on('mousedown',function(){
             $('#f2_card').toggleClass('flip');
         })
         
-        $('#james_gillNE').on('click',function(){
+        $('#james_gillNE').on('mousedown',function(){
             $('#f3_card').toggleClass('flip');
+            
+        })
+        
+        $('#gary_hinds').on('mousedown',function(){
+            $('#f4_card').toggleClass('flip');
+            
+        })
+        $('#george_evancho').on('mousedown',function(){
+            $('#f5_card').toggleClass('flip');
+            
         })
 
     
-    document.querySelector( '.north_east' ).addEventListener('click',function(event){
+    document.querySelector( '.north_east' ).addEventListener('mousedown',function(event){
         event.preventDefault();
-        zoom.to({ element: event.target, padding:100, callback: northeast()                                          
+        zoom.to({ element: event.target, padding:200, callback: northeast()                                          
                 });
             
         });
     
     
-    document.querySelector( '.west_region' ).addEventListener('click',function(event){
+    document.querySelector( '.west_region' ).addEventListener('mousedown',function(event){
         event.preventDefault();
         zoom.to({ element: event.target, padding:100, callback:function(){ 
 //                        $("#richard_scatoni").fadeToggle();

@@ -178,7 +178,7 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
         width: 134px;
         height: 200px;
         z-index: 2;
-        top:100px; right:500px;
+        top:300px; right:400px;
         perspective: 1000;
         display:none;
     }
@@ -198,9 +198,9 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 */
 
     /*  SECOND IMAGE CONTAINER  */
-      #greg_byrnesNE {
+#greg_byrnesNE {
       position: absolute;
-      width: 133px;
+      width: 134px;
       height: 200px;
       z-index: 2;
       top:350px; right:0px;
@@ -220,9 +220,9 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 
     }  
 */
-      #james_gillNE {
+#james_gillNE {
       position: absolute;
-      width: 133px;
+      width: 134px;
       height: 200px;
       z-index: 2;
       top:650px; right:0px;
@@ -230,7 +230,37 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
       display:none;
           
     }
-    #f3_card {
+#f3_card {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: all 1.0s linear;
+    }
+#gary_hinds {
+    position: absolute;
+      width: 134px;
+      height: 200px;
+      z-index: 2;
+      top:20px; right:400px;
+      perspective: 1000;
+      display:none;
+}
+#f4_card {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: all 1.0s linear;
+    }
+#george_evancho {
+    position: absolute;
+      width: 125px;
+      height: 150px;
+      z-index: 2;
+      top:20px; right:550px;
+      perspective: 1000;
+      display:none;
+}
+#f5_card {
       width: 100%;
       height: 100%;
       transform-style: preserve-3d;
@@ -272,8 +302,13 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 #ne {
     z-index:2;
     position:absolute;
-    right:-100px; top:500px;
+    right:-600px; top:400px;
     opacity:0;
+    width:500px; height:500px;
 }
+
+
+
+
 
 
