@@ -1,9 +1,6 @@
 $(function() {
     
-//     document.querySelector( '.page-body' ).addEventListener( 'mousedown', function( event ) {
-//            event.preventDefault();
-//            zoom.to({ element: event.target });
-//        } );
+
         
     var northeast = function(){ 
                         $("#richard_scatoni").fadeToggle();
@@ -28,11 +25,7 @@ $(function() {
         $('#james_gillNE').on('mousedown',function(){
             $('#f3_card').toggleClass('flip');
         })
-//    $('.hover').hover(function(){
-//            $(this).addClass('flip');
-//        },function(){
-//            $(this).removeClass('flip');
-//        });
+
     
     document.querySelector( '.north_east' ).addEventListener('click',function(event){
         event.preventDefault();
@@ -97,7 +90,7 @@ $(function() {
 //            zoom.to({ element: event.target });
 //        } );
     
-    document.querySelector( '#ne .reset' ).addEventListener( 'mousedown', function( event ) {
+    document.querySelector( '#ne' ).addEventListener( 'mousedown', function( event ) {
             event.preventDefault();            
             zoom.out();
         }); 
