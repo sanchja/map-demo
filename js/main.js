@@ -3,21 +3,52 @@ $(function() {
 
         
     var northeast = function(){ 
-                            $("#richard_scatoni").fadeToggle();
+                        $("#richard_scatoni").fadeToggle();
                         $("#kim_fearNE").fadeToggle();
                         $("#greg_byrnesNE").fadeToggle();
                         $("#james_gillNE").fadeToggle();
                         $('#gary_hinds').fadeToggle();
                         $('#george_evancho').fadeToggle();
-                        }
+        
+    }
     
-//    var checkcards = function(){
-//        if ($(".flip").length>0{
-//                  alert('this happened');  // Do something if class exists
-//                } else {
-//                    alert('it didn\'t happen');
-//                }
-//    }
+    var checkflip = function(){
+                 if ($('#f0_card.flip').length == 1){
+        /* return true */$('#f0_card').toggleClass();
+        }
+    
+    }
+    var checkflip1 = function(){
+                 if ($('#f1_card.flip').length == 1){
+        /* return true */$('#f1_card').toggleClass();
+        }
+    
+    }
+    var checkflip2 = function(){
+                 if ($('#f2_card.flip').length == 1){
+        /* return true */$('#f2_card').toggleClass();
+        }
+    
+    }
+    var checkflip3 = function(){
+                 if ($('#f3_card.flip').length == 1){
+        /* return true */$('#f3_card').toggleClass();
+        }
+    
+    }
+    var checkflip4 = function(){
+                 if ($('#f4_card.flip').length == 1){
+        /* return true */$('#f4_card').toggleClass();
+        }
+    
+    }
+    var checkflip5 = function(){
+                 if ($('#f5_card.flip').length == 1){
+        /* return true */$('#f5_card').toggleClass();
+        }
+    
+    }
+        
     
         $('#richard_scatoni').on('mousedown',function(){
             $('#f0_card').toggleClass('flip');
@@ -49,8 +80,7 @@ $(function() {
     
     document.querySelector( '.north_east' ).addEventListener('mousedown',function(event){
         event.preventDefault();
-        zoom.to({ element: event.target, padding:200, callback: northeast()                                          
-                });
+        zoom.to({ element: event.target, padding:200, callback: northeast(), callback: checkflip(), callback:checkflip1(), callback:checkflip2(), callback:checkflip3(), callback:checkflip4(), callback:checkflip5()
             
         });
     
@@ -119,6 +149,11 @@ $(function() {
     
     //$( "#kim_fearNE" ).draggable();
     
+   
+
+    
+});
+   
 });
     
     

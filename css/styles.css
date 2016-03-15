@@ -3,6 +3,7 @@ MA/* CSS Document */
 
 body{position:relative;
 }
+p{font-size:.7em;}
 h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 .usa_map{
     background-image: url(../image/map_usa.png);
@@ -80,12 +81,8 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 .zoom_samples {
     position:absolute; left:300px; top: 300px; font-size:2em; background height:auto; width:200px; float:left; color:darkblue;
 }
-.west_region{
-    position:absolute; left:300px; top: 300px; font-size:2em; background height:auto; width:200px; color:darkblue;
-}
-.west_region:hover{
-    
-}
+
+
 
 #region_titles {
     position:absolute;
@@ -111,8 +108,9 @@ h6{ font-size: .9em; font-weight: 800; color: black; text-align: center;}
 }
 
 .west_region {
+    z-index:2;
     position:absolute;
-    top:91px; left:38px; float:left;
+    top:91px; left:38px;
     width:422px; height:auto;
     opacity:.5;
 }

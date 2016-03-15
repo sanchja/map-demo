@@ -25,7 +25,8 @@ a {
 em {
 	font-style: italic;
 }
-
+p{font-size:.7em;}
+h6{font-size: .8em;}
 .page-header,
 .page-body {
 	max-width: 800px;
@@ -50,6 +51,7 @@ em {
 
 .page-body p {
 	margin-bottom: 40px;
+    font-size:.2em;
 }
 
 .page-body h2 {
