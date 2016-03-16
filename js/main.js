@@ -5,11 +5,24 @@ $(function() {
     
     
     $( "#richard_scatoni" ).draggable();
+        $( "#kim_fearNE" ).draggable();
+
     $( "#slide" ).draggable();
     $("#slide").on('mousedown', function(){
         
             
-        $('#container').css('display','block');
+        if( $('#container').css('display', 'block') == null )  { 
+    /*success*/ $('#container').css('display','block');
+} 
+else { 
+    /*does not have*/ $('#container').toggleClass('dothis');
+}
+        
+        
+               
+           
+    
+        
     });
     
     var northeast = function(){ 
