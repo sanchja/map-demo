@@ -1,7 +1,17 @@
 $(function() {
     
+            
 
+    
+    
+    $( "#richard_scatoni" ).draggable();
+    $( "#slide" ).draggable();
+    $("#slide").on('mousedown', function(){
         
+            
+        $('#container').css('display','block');
+    });
+    
     var northeast = function(){ 
                         $("#richard_scatoni").fadeToggle();
                         $("#kim_fearNE").fadeToggle();
@@ -9,6 +19,7 @@ $(function() {
                         $("#james_gillNE").fadeToggle();
                         $('#gary_hinds').fadeToggle();
                         $('#george_evancho').fadeToggle();
+
         
     }
     
@@ -106,9 +117,7 @@ $(function() {
             zoom.out();
         }); 
     
-    $( "#richard_scatoni" ).draggable();
     
-    //$( "#kim_fearNE" ).draggable();
     
    
 

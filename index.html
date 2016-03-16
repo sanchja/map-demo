@@ -2,26 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Map Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Map Demo</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-2.2.1.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-
 </head>
 
-<body bgcolor="#d6f1fd">	
+<body bgcolor="#d6f1fd">
+
 <div class="page-body"> 
-    <div class="usa_map">
-        
-        
-        <div id="Titles">West Region</div>
+        <div class="usa_map">
+        <div class="logo"><img src="/image/footer_logos-2-201404.png"/></div>
+            <div id="Titles">West Region</div>
         <div class="south_region">South Central</div>
         <h3 id="region_titles">Northeast Region</h3>
         <div class="west_region"><img src="image/west_region.png"/></div>
         <div class="north_east"><img src="image/n_east.png"/></div>
         <div id="ne" class="reset"></div>
+            
+                        <div id="slide" class="fa fa-arrow-up"></div>
+
 <!-- Richard T Scatoni -->
             <div id="richard_scatoni">
                 <div id="f0_card" class="shadow">
@@ -33,12 +36,12 @@
                     <div class="back face center">
                         <h6>bulum non turpis variu</h6>
                         <br>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum massa, interdum placerat venenatis ac,  </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum massa, interdum placerat venenatis ac, ipsum massa, interdum placerat venenatis ac,  </p>
                     </div>
                 </div>
             </div>
 <!--Kim Fear-->
-            <div id="kim_fearNE">
+            <div id="kim_fearNE" class="ui-draggable ui-draggable-handle">
                 <div id="f1_card" class="shadow">
                     <div class="front face">
                         <img src="image/Fear.Kim.Northeast.22120.jpg"/>
@@ -117,19 +120,30 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="container" class="animated fadeInUp">
+            <ul>
+                <li class="buttons"><a href="northeast.html">NE</a></li>
+                <li class="buttons">W</li>
+                <li class="buttons">SC</li>
+                <li class="buttons">MW</li>
+                <li class="buttons">SE</li>
+                <li class="buttons">NC</li>
+             </ul>			
+	</div> 
     </div>
-<!--End of usa map-->          
+<!--End of usa map--> 
+   
+        <script src="js/main.js"></script>
+        <script src="js/zoom.js"></script>
     
-    <script src="js/main.js"></script>
-    <script src="js/zoom.js"></script>
-    <script>  
-        document.querySelector( '.page-body' ).addEventListener( 'mousedown', function( event ) {
-            event.preventDefault();            
-            zoom.to({ element: event.target });
-        }), 
+        <script>  
+            document.querySelector( '.page-body' ).addEventListener( 'mousedown', function( event ) {
+                event.preventDefault();            
+                zoom.to({ element: event.target });
+            }),
+                
         </script>
-    
-</div>
+    <script src="js/jquery-ui.min.js"></script>
+    </div>
 </body>
 </html>
