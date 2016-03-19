@@ -5,19 +5,23 @@ $(function() {
     
     
     $( "#richard_scatoni" ).draggable();
-        $( "#kim_fearNE" ).draggable();
+        //$( "#kim_fearNE" ).draggable();
 
     $( "#slide" ).draggable();
+//    $("#slide").on('mousedown', function(){
+//        
+//            
+//        if( $('#container').css('display', 'block') == null )  { 
+//    /*success*/ $('#container').css('display','block');
+//} 
+//else { 
+//    /*does not have*/ $('#container').toggleClass('dothis');
+//}
+        
     $("#slide").on('mousedown', function(){
         
             
-        if( $('#container').css('display', 'block') == null )  { 
-    /*success*/ $('#container').css('display','block');
-} 
-else { 
-    /*does not have*/ $('#container').toggleClass('dothis');
-}
-        
+        $('#container').fadeIn().toggleClass('animated fadeInUp');
         
                
            
@@ -111,7 +115,7 @@ else {
     
     document.querySelector( '.west_region' ).addEventListener('mousedown', function(event){
         event.preventDefault();
-        zoom.to({ element: event.target, padding:100,                                           
+        zoom.to({ element: event.target, padding:100                                           
                 });
             
         });
